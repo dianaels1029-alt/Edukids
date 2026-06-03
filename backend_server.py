@@ -9,9 +9,12 @@ import os
 app = Flask(__name__)
 DB_FILE = "activated_players.json"
 
-# AdMob Configuration
+# AdMob Configuration - YOUR CREDENTIALS
 ADMOB_PUBLISHER_ID = "pub-6872596196321341"
-ADMOB_APP_ID = "ca-app-pub-6872596196321341~0000000000"  # Replace with your app ID
+ADMOB_APP_ID = "ca-app-pub-6872596196321341~5290076037"
+ADMOB_BANNER_ID = "ca-app-pub-6872596196321341/7456084694"
+ADMOB_INTERSTITIAL_ID = "ca-app-pub-6872596196321341/9751075542"
+ADMOB_REWARDED_ID = "ca-app-pub-6872596196321341/5266025304"
 
 # Initialize local database file if it doesn't exist
 if not os.path.exists(DB_FILE):
@@ -67,8 +70,9 @@ def admob_config():
     return jsonify({
         "publisher_id": ADMOB_PUBLISHER_ID,
         "app_id": ADMOB_APP_ID,
-        "banner_ad_unit": "ca-app-pub-6872596196321341/xxxxxxxx",
-        "interstitial_ad_unit": "ca-app-pub-6872596196321341/yyyyyyyy"
+        "banner_ad_unit": ADMOB_BANNER_ID,
+        "interstitial_ad_unit": ADMOB_INTERSTITIAL_ID,
+        "rewarded_ad_unit": ADMOB_REWARDED_ID
     }), 200
 
 if __name__ == '__main__':
