@@ -19,8 +19,8 @@ requirements = python3,kivy,requests,jnius
 # Permissions for monetization and network
 android.permissions = INTERNET,ACCESS_NETWORK_STATE
 
-# AdMob Configuration
-android.meta_data = com.google.android.gms.ads.APPLICATION_ID=ca-app-pub-6872596196321341~0000000000
+# AdMob Configuration - YOUR CREDENTIALS
+android.meta_data = com.google.android.gms.ads.APPLICATION_ID=ca-app-pub-6872596196321341~5290076037
 
 # Build configuration
 android.api = 31
