@@ -15,10 +15,11 @@ import webbrowser
 # Change this to match your live PythonAnywhere domain!
 CLOUD_URL = "https://ArchitectDon.pythonanywhere.com/check-license"
 
-# AdMob Configuration
-ADMOB_APP_ID = "ca-app-pub-6872596196321341~0000000000"  # Replace with your app ID
-ADMOB_BANNER_ID = "ca-app-pub-6872596196321341/xxxxxxxx"  # Replace with your banner ad unit ID
-ADMOB_INTERSTITIAL_ID = "ca-app-pub-6872596196321341/yyyyyyyy"  # Replace with your interstitial ad unit ID
+# AdMob Configuration - YOUR CREDENTIALS
+ADMOB_APP_ID = "ca-app-pub-6872596196321341~5290076037"
+ADMOB_BANNER_ID = "ca-app-pub-6872596196321341/7456084694"
+ADMOB_INTERSTITIAL_ID = "ca-app-pub-6872596196321341/9751075542"
+ADMOB_REWARDED_ID = "ca-app-pub-6872596196321341/5266025304"
 
 KV = '''
 #:import utils kivy.utils
