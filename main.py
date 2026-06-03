@@ -7,14 +7,15 @@ from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
 from kivy.core.window import Window
 from kivy.graphics import Color, Rectangle
-from kivy.garden.androidbanner import AndroidBanner
 
 # Force a fun mobile aspect ratio for testing
 Window.clearcolor = (0.05, 0.1, 0.2, 1) # Deep Space Blue Background
 
-# AdMob Configuration
-ADMOB_BANNER_ID = "ca-app-pub-6872596196321341/xxxxxxxx"  # Replace with your banner ad unit ID
-ADMOB_INTERSTITIAL_ID = "ca-app-pub-6872596196321341/yyyyyyyy"  # Replace with your interstitial ad unit ID
+# AdMob Configuration - YOUR CREDENTIALS
+ADMOB_APP_ID = "ca-app-pub-6872596196321341~5290076037"
+ADMOB_BANNER_ID = "ca-app-pub-6872596196321341/7456084694"
+ADMOB_INTERSTITIAL_ID = "ca-app-pub-6872596196321341/9751075542"
+ADMOB_REWARDED_ID = "ca-app-pub-6872596196321341/5266025304"
 
 class SecurityGate:
     @staticmethod
